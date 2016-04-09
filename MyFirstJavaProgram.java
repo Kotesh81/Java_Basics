@@ -19,7 +19,7 @@ class firstprogram extends JFrame implements ActionListener
 
 	firstprogram()
 	{
-	l=new JLabel("Enter the text");
+	l=new JLabel("Enter User Name :");
 	t=new JTextField(15);
 	b=new JButton("Submit");
 	JPanel p=new JPanel();
@@ -47,7 +47,8 @@ class firstprogram extends JFrame implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent a) {
 		String s=t.getText();
-		JOptionPane.showMessageDialog(this, s, "", JOptionPane.WARNING_MESSAGE);
+		String s1= "Hello  " ;	
+				JOptionPane.showMessageDialog(this,s1+ s, "", JOptionPane.WARNING_MESSAGE);
 	}
 }
 
